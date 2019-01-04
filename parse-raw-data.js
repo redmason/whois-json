@@ -47,7 +47,8 @@ var parseRawData = function(rawData) {
 
 				// If multiple lines use the same key, combine the values
 				if ( key in result ) {
-					result[key] = `${result[key]} ${value}`;
+					// Just use the first value
+					// result[key] = `${result[key]} ${value}`;
 					return
 				}
 				result[key] = value;
